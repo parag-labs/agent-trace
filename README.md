@@ -1,5 +1,7 @@
 # agent-trace
 
+**[Try the live demo →](https://parag-labs.github.io/agent-trace/)**
+
 A visual timeline and replay for AI agent runs. Drop in a trace of what an agent
 did - its model calls, tool calls, tokens, cost, and latency - and see where the
 time and the money actually went, then diff two runs side by side. Think of it as
