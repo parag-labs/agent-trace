@@ -22,6 +22,10 @@ and money went, and what looks anomalous. Goals:
 3. Run entirely in the browser with no backend, so a trace never leaves the machine
    and the demo is a single static page.
 
+![pure core, thin UI](docs/diagrams/core-ui-flow.png)
+
+*(Source: [`docs/diagrams/core-ui-flow.excalidraw`](docs/diagrams/core-ui-flow.excalidraw) - editable in [excalidraw](https://aka.ms/excalidraw).)*
+
 ## Key design decision: a pure core, a thin UI
 
 The split is deliberate and it's the whole architecture. `core/` is framework-free
