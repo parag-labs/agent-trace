@@ -1,0 +1,24 @@
+{
+  "sizes": [
+    1000,
+    5000,
+    20000,
+    50000,
+    100000
+  ],
+  "parse_steps_per_sec": [
+    1120197,
+    1149135,
+    815272,
+    959019,
+    929212
+  ],
+  "analyze_steps_per_sec": [
+    1196888,
+    1096395,
+    1041878,
+    993005,
+    1034258
+  ],
+  "note": "best-of-5 per size on Node native TS; steps/sec = trace steps / elapsed"
+}
