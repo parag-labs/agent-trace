@@ -1,0 +1,4 @@
+{"run_id":"budget","step":0,"type":"llm","model":"gpt-4o","input_tokens":8000,"output_tokens":2000,"cost":0.04,"latency_ms":2200,"ts":1712360000.0,"prompt":"Analyze the full 40-page contract.","completion":"Reading the document..."}
+{"run_id":"budget","step":1,"type":"llm","model":"gpt-4o","input_tokens":12000,"output_tokens":3000,"cost":0.06,"latency_ms":3100,"ts":1712360003.0,"prompt":"Continue analysis with the appendices.","completion":"Key risks: indemnity clause 7.2, auto-renewal 11.4."}
+{"run_id":"budget","step":2,"type":"tool","name":"save_summary","args":{"path":"contract-notes.md"},"result":"saved","latency_ms":90,"ts":1712360006.0}
+{"run_id":"budget","step":3,"type":"llm","model":"claude-opus-4","input_tokens":9000,"output_tokens":1500,"cost":0.2475,"latency_ms":4200,"ts":1712360007.0,"prompt":"Second-opinion review of the risk list.","completion":"Concur on 7.2; also flag liability cap 9.1."}

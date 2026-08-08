@@ -1,0 +1,22 @@
+{
+  "name": "agent-trace",
+  "private": true,
+  "version": "0.1.0",
+  "description": "visual timeline and replay for AI agent runs",
+  "workspaces": [
+    "core",
+    "ui"
+  ],
+  "scripts": {
+    "lint": "eslint . --ext .ts,.tsx",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "build": "npm run build --workspace ui"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "eslint": "^8.57.1",
+    "typescript": "^5.6.2"
+  }
+}

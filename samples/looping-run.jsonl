@@ -1,0 +1,6 @@
+{"run_id":"looping","step":0,"type":"llm","model":"gpt-4o","input_tokens":500,"output_tokens":90,"cost":0.00215,"latency_ms":810,"ts":1712350000.0,"prompt":"Find the flaky test and open a bug.","completion":"I'll search the CI logs."}
+{"run_id":"looping","step":1,"type":"tool","name":"search_logs","args":{"query":"flaky"},"result":"no results","latency_ms":180,"ts":1712350001.0}
+{"run_id":"looping","step":2,"type":"tool","name":"search_logs","args":{"query":"flaky"},"result":"no results","latency_ms":175,"ts":1712350002.0}
+{"run_id":"looping","step":3,"type":"tool","name":"search_logs","args":{"query":"flaky"},"result":"no results","latency_ms":182,"ts":1712350003.0}
+{"run_id":"looping","step":4,"type":"tool","name":"search_logs","args":{"query":"flaky"},"result":"no results","latency_ms":900,"ts":1712350004.0}
+{"run_id":"looping","step":5,"type":"error","message":"max tool iterations exceeded","ts":1712350005.0}

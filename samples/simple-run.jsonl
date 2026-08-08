@@ -1,0 +1,4 @@
+{"run_id":"simple","step":0,"type":"llm","model":"gpt-4o","input_tokens":420,"output_tokens":85,"cost":0.00155,"latency_ms":760,"ts":1712345678.0,"prompt":"User: summarize the incident report and list owners.","completion":"Summary: DB failover at 02:14. Owners: platform (paging), data (root cause)."}
+{"run_id":"simple","step":1,"type":"tool","name":"lookup_oncall","args":{"team":"platform"},"result":"platform on-call: A. Rivera","latency_ms":140,"ts":1712345679.1}
+{"run_id":"simple","step":2,"type":"tool","name":"lookup_oncall","args":{"team":"data"},"result":"data on-call: J. Chen","latency_ms":130,"ts":1712345679.4}
+{"run_id":"simple","step":3,"type":"llm","model":"gpt-4o-mini","input_tokens":210,"output_tokens":60,"cost":0.000067,"latency_ms":320,"ts":1712345680.0,"prompt":"Draft a short update tagging the owners.","completion":"Update posted: paging A. Rivera and J. Chen for follow-up."}
