@@ -77,6 +77,15 @@ npm run build    # production build of the demo
 Lint, typecheck, test, and build all run in CI on every pull request, and the demo
 is published to GitHub Pages on merge to `main`.
 
+## Design notes and numbers
+
+- **[RFC.md](RFC.md)** - why the core is pure and the UI is thin, the trade-offs
+  (in-browser/in-memory, heuristic loop detection, no charting dependency), and the
+  non-goals (it's a viewer, not a collector or a backend).
+- **[BENCHMARKS.md](BENCHMARKS.md)** - measured parse and analyze throughput on traces
+  up to 100k steps (~1M steps/sec), with a graph. Reproduce with `npm run bench` then
+  `python bench/plot.py`.
+
 ## Known limitations
 
 - **In-browser only.** There's no persistence, sharing, or multi-user history yet;
