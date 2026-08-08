@@ -1,4 +1,4 @@
-# RFC 0001: agent-trace design, trade-offs, and non-goals
+# agent-trace: design, trade-offs, and non-goals
 
 Status: accepted
 Author: Parag Sawant
