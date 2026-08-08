@@ -79,7 +79,7 @@ is published to GitHub Pages on merge to `main`.
 
 ## Design notes and numbers
 
-- **[RFC.md](RFC.md)** - why the core is pure and the UI is thin, the trade-offs
+- **[DESIGN.md](DESIGN.md)** - why the core is pure and the UI is thin, the trade-offs
   (in-browser/in-memory, heuristic loop detection, no charting dependency), and the
   non-goals (it's a viewer, not a collector or a backend).
 - **[BENCHMARKS.md](BENCHMARKS.md)** - measured parse and analyze throughput on traces
