@@ -96,4 +96,18 @@ is published to GitHub Pages on merge to `main`.
   so it catches the common "same call, same input" loop but not a semantic loop that
   varies its arguments each time.
 
+## Layout
+
+```
+agent-trace/
+├── core/           the trace model, parser, and diff engine (TypeScript, vitest)
+├── ui/             the timeline / replay UI (Vite + TypeScript)
+├── bench/          benchmark.ts + plot.py - parse/diff throughput
+├── samples/        example run traces (simple, looping, over-budget)
+├── docs/diagrams/  architecture diagrams
+├── DESIGN.md       the run/span model and how two runs are diffed
+└── BENCHMARKS.md   reproducible numbers
+```
+
+
 Part of [parag-labs](https://github.com/parag-labs) - small, focused tools for building AI systems you can trust.
