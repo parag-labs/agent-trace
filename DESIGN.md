@@ -24,7 +24,7 @@ and money went, and what looks anomalous. Goals:
 
 ![pure core, thin UI](docs/diagrams/core-ui-flow.png)
 
-*(Source: [`docs/diagrams/core-ui-flow.excalidraw`](docs/diagrams/core-ui-flow.excalidraw) - editable in [excalidraw](https://aka.ms/excalidraw).)*
+*(The same diagram renders inline as Mermaid in the [README](README.md#how-it-works); this PNG is a static export.)*
 
 ## Key design decision: a pure core, a thin UI
 
