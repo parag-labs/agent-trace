@@ -121,7 +121,6 @@ agent-trace/
 ├── ui/             the timeline / replay UI (Vite + TypeScript)
 ├── bench/          benchmark.ts + plot.py - parse/diff throughput
 ├── samples/        example run traces (simple, looping, over-budget)
-├── docs/diagrams/  architecture diagrams
 ├── DESIGN.md       the run/span model and how two runs are diffed
 └── BENCHMARKS.md   reproducible numbers
 ```
