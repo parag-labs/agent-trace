@@ -100,19 +100,17 @@ is published to GitHub Pages on merge to `main`.
 
 ```mermaid
 flowchart LR
-  classDef proc fill:#4a90e2,stroke:#2c5aa0,color:#fff
-  classDef good fill:#27ae60,stroke:#1e8449,color:#fff
-  classDef work fill:#8e44ad,stroke:#6c3483,color:#fff
-  J["native JSONL trace"]:::proc
-  O["OpenTelemetry<br/>GenAI spans"]:::proc
-  ADAPT["adapter - normalize<br/>to one model"]:::work
-  NORM["normalized trace<br/>(ordered steps)"]:::proc
-  CORE["core/ - pure functions<br/>cost/token/latency roll-ups<br/>loop detection + outliers<br/>diff between two runs"]:::work
-  VM["view model"]:::proc
-  UI["ui/ - React renders<br/>what core returns"]:::good
+  classDef proc fill:#eff6ff,stroke:#3b82f6,color:#1e3a8a
+  classDef good fill:#f0fdf4,stroke:#22c55e,color:#14532d
+  classDef work fill:#faf5ff,stroke:#a855f7,color:#581c87
+  J["JSONL trace"]:::proc
+  O["OTel spans"]:::proc
+  ADAPT["Adapter"]:::work
+  CORE["core/<br/>(pure, tested)"]:::work
+  UI["ui/<br/>(React)"]:::good
   J --> ADAPT
   O --> ADAPT
-  ADAPT --> NORM --> CORE --> VM --> UI
+  ADAPT -->|normalized| CORE --> UI
 ```
 
 ## Layout
