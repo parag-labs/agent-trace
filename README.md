@@ -96,6 +96,25 @@ is published to GitHub Pages on merge to `main`.
   so it catches the common "same call, same input" loop but not a semantic loop that
   varies its arguments each time.
 
+## How it works
+
+```mermaid
+flowchart LR
+  classDef proc fill:#4a90e2,stroke:#2c5aa0,color:#fff
+  classDef good fill:#27ae60,stroke:#1e8449,color:#fff
+  classDef work fill:#8e44ad,stroke:#6c3483,color:#fff
+  J["native JSONL trace"]:::proc
+  O["OpenTelemetry<br/>GenAI spans"]:::proc
+  ADAPT["adapter - normalize<br/>to one model"]:::work
+  NORM["normalized trace<br/>(ordered steps)"]:::proc
+  CORE["core/ - pure functions<br/>cost/token/latency roll-ups<br/>loop detection + outliers<br/>diff between two runs"]:::work
+  VM["view model"]:::proc
+  UI["ui/ - React renders<br/>what core returns"]:::good
+  J --> ADAPT
+  O --> ADAPT
+  ADAPT --> NORM --> CORE --> VM --> UI
+```
+
 ## Layout
 
 ```
